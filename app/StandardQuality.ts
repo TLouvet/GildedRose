@@ -1,9 +1,6 @@
 import { MAX_STANDARD_QUALITY, MIN_STANDARD_QUALITY } from './constants';
 
 export class StandardQuality {
-  protected STANDARD_DEFAULT_QUALITY_UPDATE = 1;
-  protected FAST_DEFAULT_QUALITY_UPDATE = 2 * this.STANDARD_DEFAULT_QUALITY_UPDATE;
-
   constructor(private quality: number) {}
 
   init() {
