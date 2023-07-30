@@ -17,7 +17,7 @@ export class GildedRose {
     return this.items;
   }
 
-  protected handleItemUpdate(item: Item) {
+  private handleItemUpdate(item: Item) {
     if (item instanceof LegendaryItem) {
       return;
     }
@@ -25,7 +25,7 @@ export class GildedRose {
     this.handleStandardItemUpdate(item as StandardItem);
   }
 
-  protected handleStandardItemUpdate(item: StandardItem) {
+  private handleStandardItemUpdate(item: StandardItem) {
     item.handleUpdate();
   }
 }
